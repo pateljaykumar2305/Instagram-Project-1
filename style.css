@@ -1,0 +1,106 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    width:100%;
+    height: 100%; 
+}
+
+body{
+    background-color: rgb(44, 171, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card
+{
+    width: 265px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 2px solid black;
+    white-space: nowrap;
+    position: relative;
+}
+
+#storiyan
+{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#storiyan::-webkit-scrollbar
+{
+    display: none;
+}
+
+.story
+{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(102, 97, 165);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.story img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-position: center; 
+}
+
+#fullScreen
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
+
+#nextStoryArrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 30%;
+    background-color: rgba(13, 1, 1, 0); /* Semi-transparent black background */
+    color: rgb(9, 8, 8); /* White arrow icon */
+    font-size: 20px; /* Adjust font size for arrow symbol */
+    text-align: center;
+    line-height: 30px; /* Center align icon vertically */
+    cursor: pointer; /* Indicate clickable area */
+  }
+
+#PreviousStoryArrow
+{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 30%;
+    background-color: rgba(13, 1, 1, 0); /* Semi-transparent black background */
+    color: rgb(9, 8, 8); /* White arrow icon */
+    font-size: 20px; /* Adjust font size for arrow symbol */
+    text-align: center;
+    line-height: 30px; /* Center align icon vertically */
+    cursor: pointer; /* Indicate clickable area */
+}
